@@ -7,6 +7,7 @@
     <title>Kivibe</title>
     <link href="{{ asset('css/login.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 </head>
 <body>
@@ -17,8 +18,29 @@
             </div>
         </div>
         <div class="content-tabs">
-            <div><button type="button" class="btn btn-tab">Sing In</button></div>
-            <div><button type="button" class="btn btn-tab">Sing up</button></div>    
+            <div class="content-tab"><button type="button" class="btn  btn-tab">Sing In</button></div>
+            <div class="content-tab"><button type="button" class="btn btn-tab">Sing In</button></div>    
+        </div>
+        <div class="sing-in-content">
+            <div>
+                <button type="button" class="btn btn-dark btn-circle btn-social">
+                    <i class="fa fa-google fa-2x"></i>
+                  </button>
+            </div>
+            <div>
+                <button type="button" class="btn btn-dark btn-circle btn-social">
+                    <i class="fa fa-apple fa-2x"></i>
+                  </button>
+            </div>
+           
+        </div>
+        <div class="form-floating mb-3 mt-5">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Password</label>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

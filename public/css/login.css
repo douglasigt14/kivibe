@@ -5,9 +5,10 @@
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: #4B39EF;
+    background-color: #000F52;
 }
 .img-logo{
+    margin-top: 3rem;
     margin-bottom: 2rem;
 }
 .content-tabs{
@@ -17,6 +18,81 @@
     width: 100%;
     color: white;
 }
-.btn-tab{
+.content-tab{
     color: white !important;
 }
+.content-tab:hover{
+    transition: background-color 0.3s ease;
+    color: white !important;
+    border-color: white !important;
+    border-bottom: 2px solid #000; /* Substitua pela cor e espessura desejadas */
+    border-top: 0; border-left: 0; border-right: 0;
+}
+.btn-tab{
+    color: white !important;
+    border-color: white !important;
+    border: 0 !important;
+    border-bottom: 2px;
+}
+.btn-tab:hover{
+    border-color: white !important;
+    border: 0 !important;
+    border-bottom: 2px;
+
+}
+.btn-circle {
+    border-radius: 50% !important;
+}
+.btn-social {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #000 !important;
+}
+.sing-in-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+ .form-floating {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+/*
+  .form-floating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    border: 1px solid transparent;
+    transform-origin: 0 0;
+    transition: transform 0.2s, opacity 0.2s;
+  }
+
+  .form-floating input {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 1.25rem;
+    margin-bottom: -1px;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+
+  */
+
+  .form-floating input:focus {
+    border-color: #007bff;
+    outline: 0;
+  }
+
+  .form-floating input:not(:placeholder-shown) + label {
+    transform: scale(0.75) translateY(-1.5rem) translateX(0.5rem);
+    opacity: 0.8;
+  } 
